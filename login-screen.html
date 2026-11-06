@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sales Hub Login — Mizuho America</title>
+<meta name="description" content="Sign in to the Mizuho America Sales Hub rep portal.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Freeman&family=Montserrat:wght@300;400;500;700&family=Mukta:wght@300;400;700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,600&display=swap">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/main.js" defer></script>
+</head>
+<body class="page-login">
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header portal-header" data-header>
+  <div class="portal-header__inner">
+    <a class="portal-header__logo" href="dashboard.html" aria-label="Mizuho America Sales Portal home"><img src="assets/img/logo.webp" alt="Mizuho America" width="200" height="61"></a>
+    <p class="portal-header__name">Sales Portal</p>
+    <button class="site-header__toggle" type="button" aria-expanded="false" aria-controls="portal-nav" aria-label="Open menu" data-menu-toggle><span></span><span></span><span></span></button>
+    <div class="portal-header__menu" id="portal-nav" data-menu>
+      <nav aria-label="Sales portal"><ul class="portal-nav"><li><a href="dashboard.html">Dashboard</a></li><li><a href="resource-library.html">Resources</a></li><li><a href="#">Cross-Reference</a></li><li><a href="#">Training</a></li></ul></nav>
+      <p class="portal-header__user">John Q. Public</p>
+      <details class="account-menu">
+        <summary>Account</summary>
+        <ul><li><a href="dashboard.html#account">Account details</a></li><li><a href="dashboard.html#account">Change password</a></li><li><a href="login-screen.html">Log out</a></li></ul>
+      </details>
+    </div>
+  </div>
+</header>
+
+<main id="main" class="login">
+  <div class="login__card">
+    <img class="login__logo" src="assets/img/logo.webp" alt="Mizuho America" width="200" height="61">
+    <h1 class="login__title">Sales Hub - <span>Rep Portal</span></h1>
+    <form class="login__form" action="#" data-validate data-next="dashboard.html">
+      <label for="login-email">Email address</label>
+      <input id="login-email" name="email" type="email" placeholder="rep_name@example.com" autocomplete="username" required>
+      <label for="login-password">Password</label>
+      <input id="login-password" name="password" type="password" placeholder="************" autocomplete="current-password" required>
+      <button class="btn login__submit" type="submit">Log in to Sales Hub</button>
+      <p class="login__status" data-form-status role="status" aria-live="polite"></p>
+      <a class="login__forgot" href="contact-us.html">Forgot your password?</a>
+    </form>
+    <p class="login__note">Sales Hub access is for registered Mizuho America sales representatives only.<br>To request access, contact your account manager.</p>
+  </div>
+</main>
+
+<footer class="portal-footer">
+  <div class="portal-footer__inner">
+    <img src="assets/img/logo-rev.webp" alt="Mizuho America" width="200" height="58" loading="lazy">
+    <p>Sales Hub <span aria-hidden="true">•</span> © 2026 Mizuho America, Inc. All rights reserved.</p>
+    <ul><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms of Use</a></li></ul>
+  </div>
+</footer>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-arrow-circle" viewBox="0 0 55 55"><circle cx="27.5" cy="27.5" r="27.5" fill="#fff"/><path d="M27.5 24.75H16.5V30.25H27.5V38.5L38.5 27.5L27.5 16.5V24.75Z" fill="#090909"/></symbol>
+  <symbol id="i-play" viewBox="0 0 45 45"><path fill="currentColor" d="M22.08 44.17C9.89 44.17 0 34.28 0 22.08S9.89 0 22.08 0s22.09 9.89 22.09 22.08-9.89 22.09-22.09 22.09Zm0-4.42c9.76 0 17.67-7.91 17.67-17.67S31.84 4.42 22.08 4.42 4.42 12.33 4.42 22.08s7.9 17.67 17.66 17.67Zm-3.04-25.58 10.77 7.18a.88.88 0 0 1 0 1.47L19.04 30a.88.88 0 0 1-1.37-.73V14.9a.88.88 0 0 1 1.37-.73Z"/></symbol>
+  <symbol id="i-arrow-down" viewBox="0 0 14 16"><path d="M7 0v14M1 8l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+<symbol id="i-arrow-left" viewBox="0 0 15 12"><path d="M14 6H1.5M6.5 1 1.5 6l5 5" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+  <symbol id="i-arrow-right" viewBox="0 0 15 12"><path d="M1 6h12.5M8.5 1l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+  <symbol id="i-arrow-circle-sky" viewBox="0 0 55 55"><path fill="#77dcff" d="M27.5 0C42.68 0 55 12.32 55 27.5S42.68 55 27.5 55 0 42.68 0 27.5 12.32 0 27.5 0Z"/><path fill="#fff" d="M27.5 24.75H16.5v5.5h11v8.25l11-11-11-11v8.25Z"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="m16 16 6 6" stroke="currentColor" stroke-width="2"/></symbol>
+  <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 20h16" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+  <symbol id="i-chevron" viewBox="0 0 14 8"><path d="m1 1 6 6 6-6" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+  <symbol id="i-download-circle" viewBox="0 0 45 45"><circle cx="22.5" cy="22.5" r="20.5" fill="#fff" stroke="#00b3f0" stroke-width="4"/><path d="M22.5 12v15m-6-6 6 6 6-6M14 31h17" fill="none" stroke="#090909" stroke-width="2"/></symbol>
+  <symbol id="i-download-circle-sm" viewBox="0 0 30 30"><circle cx="15" cy="15" r="14" fill="#fff" stroke="#0065b3" stroke-width="2"/><path d="M15 7.5v10m-4-4 4 4 4-4M9.5 19v2h11v-2" fill="none" stroke="#000" stroke-width="2"/></symbol>
+</svg>
+</body>
+</html>
